@@ -1,0 +1,449 @@
+{
+  "info": {
+    "_postman_id": "b0a75732-7a59-41ce-866b-2792cac2de7b",
+    "name": "Spring",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50124801",
+    "_collection_link": "https://go.postman.co/collection/50124801-b0a75732-7a59-41ce-866b-2792cac2de7b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "drivers",
+      "item": [
+        {
+          "name": "List all drivers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/driver/all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "driver",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create driver",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/driver?name=test2&age=35",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "driver"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "test2"
+                },
+                {
+                  "key": "age",
+                  "value": "35"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List 1 driver",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "Update driver",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/driver/2?name=test2&age=35",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "driver",
+                "2"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "test2",
+                  "type": "text"
+                },
+                {
+                  "key": "age",
+                  "value": "35",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete driver",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/driver/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "driver",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add car to driver",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/driver/1/vehicle/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "driver",
+                "1",
+                "vehicle",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "vehicles",
+      "item": [
+        {
+          "name": "cars",
+          "item": [
+            {
+              "name": "Create car",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/car?brand=bmw&model=batmobile&year=2000&price=150",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "car"
+                  ],
+                  "query": [
+                    {
+                      "key": "brand",
+                      "value": "bmw"
+                    },
+                    {
+                      "key": "model",
+                      "value": "batmobile"
+                    },
+                    {
+                      "key": "year",
+                      "value": "2000"
+                    },
+                    {
+                      "key": "price",
+                      "value": "150"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "List all cars",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/car/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "car",
+                    "all"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "List 1 car",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/car/3",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "car",
+                    "3"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update car",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/truck/3?brand=batmo&model=vvv&year=2001&price=250&weight=2500",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "truck",
+                    "3"
+                  ],
+                  "query": [
+                    {
+                      "key": "brand",
+                      "value": "batmo"
+                    },
+                    {
+                      "key": "model",
+                      "value": "vvv"
+                    },
+                    {
+                      "key": "year",
+                      "value": "2001"
+                    },
+                    {
+                      "key": "price",
+                      "value": "250"
+                    },
+                    {
+                      "key": "weight",
+                      "value": "2500",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete car",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/car/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "car",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "trucks",
+          "item": [
+            {
+              "name": "Create Truck",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/truck?brand=test&model=model&year=2012&price=2500&weight=2000",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "truck"
+                  ],
+                  "query": [
+                    {
+                      "key": "brand",
+                      "value": "test"
+                    },
+                    {
+                      "key": "model",
+                      "value": "model",
+                      "type": "text"
+                    },
+                    {
+                      "key": "year",
+                      "value": "2012",
+                      "type": "text"
+                    },
+                    {
+                      "key": "price",
+                      "value": "2500",
+                      "type": "text"
+                    },
+                    {
+                      "key": "weight",
+                      "value": "2000",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "List all trucks",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/truck/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "truck",
+                    "all"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "List 1 truck",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/truck/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "truck",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/truck/3?brand=batmo&model=vvv&year=2001&price=250&weight=2500",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "truck",
+                    "3"
+                  ],
+                  "query": [
+                    {
+                      "key": "brand",
+                      "value": "batmo"
+                    },
+                    {
+                      "key": "model",
+                      "value": "vvv"
+                    },
+                    {
+                      "key": "year",
+                      "value": "2001"
+                    },
+                    {
+                      "key": "price",
+                      "value": "250"
+                    },
+                    {
+                      "key": "weight",
+                      "value": "2500"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "New Request",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/truck/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "truck",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
